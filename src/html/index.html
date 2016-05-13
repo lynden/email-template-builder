@@ -1,25 +1,29 @@
 <html>
-    <head>
-        <style>
-            /* Palm devices */
-            @media screen and (max-width: 320px) {
-                body {
-                    padding: 0 12px;
-                }
-            }
-        </style>
-
-        <link rel="stylesheet" href="../css/style.css">
-
-    </head>
-    <body>
-        <table>
-            <tr>
-                <td>
-                    <h1>Heading...</h1>
-                    <p>Body copy</p>
-                </td>
-            </tr>
-        </table>
-    </body>
+  <head>
+    <!-- Only styles that are not to be inlined go here -->
+    <style>
+        /* Palm devices */
+        @media screen and (max-width: 320px) {
+          body {
+            padding: 0 12px;
+          }
+        }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td>@@include('./header.html')</td>
+      </tr>
+      <tr>
+        <td>
+          <h1>Heading..</h1>
+          <p>Body copy</p>
+        </td>
+      </tr>
+      <tr>
+        <td>@@include('./footer.html')</td>
+      </tr>
+    </table>
+  </body>
 </html>
